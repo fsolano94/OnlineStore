@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  onlinestore:
+    build:
+      context: C:\Users\fsola\Source\Repos\OnlineStore
+      dockerfile: OnlineStore\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: onlinestore
+    ports:
+    - 80/tcp
+version: '3.0'

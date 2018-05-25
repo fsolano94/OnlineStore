@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  onlinestore:
+    image: onlinestore
+    build:
+      context: .
+      dockerfile: OnlineStore\Dockerfile
