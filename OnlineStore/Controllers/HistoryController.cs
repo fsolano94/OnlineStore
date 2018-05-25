@@ -8,7 +8,6 @@ namespace OnlineStore.Controllers
 {
     public class HistoryController : Controller
     {
-        [Route("/History")]
         public IActionResult Index()
         {
             ViewData["Message"] = "History";
